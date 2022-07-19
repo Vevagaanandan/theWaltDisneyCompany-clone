@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Walt Disney Company Veva</title>
+
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Library CDN -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/waltograph-disney" type="text/css"/>
+</head>
+<body>
+    <header id="theMenu">
+        <div class="rainbow-design"></div>
+        <nav id="theMenuNav">
+            <div class="theMenuNav-subOne" id="theMenuNav-subOne">
+                <ul>
+                    <li class="menuUnderline"><a class="theMenuNav-aTag dropDownListOnHover" href="#">ABOUT</a>
+                        <ul>
+                            <li><a href="#">LEADERSHIP</a></li>
+                            <li><a href="#">OUR BUSINESSES</a></li>
+                        </ul>
+                    </li>
+                    <li class="menuUnderline"><a class="theMenuNav-aTag dropDownListOnHover" href="#">INVESTOR RELATIONS</a>
+                        <ul>
+                            <li><a href="#">EVENTS AND PRESENTATIONS</a></li>
+                            <li><a href="#">INVESTOR RELATIONS NEWS</a></li>
+                            <li><a href="#">REPORTS</a></li>
+                            <li><a href="#">FORMS</a></li>
+                            <li><a href="#">CORPORATE GOVERNANCE</a></li>
+                            <li><a href="#">FREQUENTLY ASKED QUESTIONS</a></li>
+                        </ul>
+                    </li>
+                    <li class="menuUnderline"><a class="theMenuNav-aTag" href="#">CAREERS</a></li>
+                    <li class="logoNameList"><a class="logoName theMenuNav-aTag" href="#"><p class="fontSmall">The</p><p class="waltDisney">Walt Disney</p><p class="fontSmall">Company</p></a></li>
+                    <li class="menuUnderline"><a class="companyLogoText theMenuNav-aTag" href="#">SOCIAL RESPONSIBILITY</a></li>
+                    <li class="menuUnderline"><a class="theMenuNav-aTag" href="#">NEWS</a></li>
+                </ul>
+                <i onclick="openSearch()" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="searchBar" id="searchBar">
+                <form action="">
+                    <input type="text" name="search" placeholder="What are you looking for?">
+                </form>
+                <i onclick="closeSearch()" class="fa-solid fa-circle-xmark"></i>
+            </div>
+        </nav>
+        <div class="menuScroll" id="menuScroll">
+            <div class="rainbow-design"></div>
+            <div class="menuScroll-subOne" id="menuScroll-subOne">
+                <ul>
+                    <li class="menuUnderline"><a class="theMenuNav-aTag2 dropDownListOnHover menuScroll-aLink" href="#">ABOUT</a>
+                        <ul>
+                            <li><a href="#">LEADERSHIP</a></li>
+                            <li><a href="#">OUR BUSINESSES</a></li>
+                        </ul>
+                    </li>
+                    <li class="menuUnderline"><a class="theMenuNav-aTag2 dropDownListOnHover menuScroll-aLink" href="#">INVESTOR RELATIONS</a>
+                        <ul>
+                            <li><a href="#">EVENTS AND PRESENTATIONS</a></li>
+                            <li><a href="#">INVESTOR RELATIONS NEWS</a></li>
+                            <li><a href="#">REPORTS</a></li>
+                            <li><a href="#">FORMS</a></li>
+                            <li><a href="#">CORPORATE GOVERNANCE</a></li>
+                            <li><a href="#">FREQUENTLY ASKED QUESTIONS</a></li>
+                        </ul>
+                    </li>
+                    <li class="menuUnderline"><a class="theMenuNav-aTag2 menuScroll-aLink" href="#">CAREERS</a></li>
+                    <li class="logoNameList"><a class="logoName theMenuNav-aTag2 menuScroll-aLink" href="#"><p class="fontSmall">The</p><p class="waltDisney">Walt Disney</p><p class="fontSmall">Company</p></a></li>
+                    <li class="menuUnderline"><a class="companyLogoText theMenuNav-aTag2 menuScroll-aLink" href="#">SOCIAL RESPONSIBILITY</a></li>
+                    <li class="menuUnderline"><a class="theMenuNav-aTag2 menuScroll-aLink" href="#">NEWS</a></li>
+                </ul>
+                <i onclick="openSearch2()" class="fa-solid fa-magnifying-glass menuScroll-aLink"></i>
+            </div>
+            <div class="searchBar2" id="searchBar2">
+                <form action="">
+                    <input type="text" name="search" placeholder="What are you looking for?">
+                </form>
+                <i onclick="closeSearch2()" class="fa-solid fa-circle-xmark"></i>
+            </div>
+        </div>
+        <div class="mobileMenu-one" id="mobileMenu-one">
+            <div class="mobileMenuMain">
+                <ul>
+                    <li class="menuNclose"><a onclick="openSideMenuList()" class="aTag-menu" href="#">MENU</a></li>
+                    <li class="logoNameList"><a class="logoName theMenuNav-aTag" href="#"><p class="fontSmall">The</p><p class="waltDisney">Walt Disney</p><p class="fontSmall">Company</p></a></li>
+                    <li><a href="#"><i onclick="openSearch3()" class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+            </div>
+            <div class="searchBar3" id="searchBar3">
+                <form action="">
+                    <input type="text" name="search" placeholder="What are you looking for?">
+                </form>
+                <i onclick="closeSearch3()" class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <div class="mobileMenuOne-overlay" id="mobileMenuOne-overlay">
+                <div class="menuMain-overlay">
+                    <div class="menuOne-overlay">
+                        <ul>
+                            <li class="menuNclose"><a class="" href="#"><i onclick="closeSideMenuList()" class="fa-solid fa-circle-xmark"></i></a></li>
+                            <li class="logoNameList"><a class="logoName theMenuNav-aTag" href="#"><p class="fontSmall">The</p><p class="waltDisney">Walt Disney</p><p class="fontSmall">Company</p></a></li>
+                            <li><a href="#"><i onclick="openSearch4()" class="fa-solid fa-magnifying-glass"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="searchBar4" id="searchBar4">
+                        <form action="">
+                            <input type="text" name="search" placeholder="What are you looking for?">
+                        </form>
+                        <i onclick="closeSearch4()" class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <div class="menuOneSub-overlay">
+                        <ul>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">INVESTOR RELATIONS</a></li>
+                            <li><a href="#">CAREERS</a></li>
+                            <li><a href="#">SOCIAL RESPONSIBILITY</a></li>
+                            <li><a href="#">NEWS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- Section One START -->
+    <section class="section-one">
+        <div class="image">
+            <h1 class="mainMega-title">THE WALT DISNEY COMPANY</h1>
+        </div>
+        <div class="stockDetails">
+            <ul>
+                <li><a href="#" class="textOne">DIS as of 4:03PM EDT<p class="textOneSub">PRICING DELAYED BY 15MIN</p></a></li>
+                <li><a href="#" class="textTwo">$95.20</a></li>
+                <li><a href="#" class="textThree"><i class="fa-solid fa-arrow-up"></i>+3.36(+3.66%)</a></li>
+                <li class="viewStockDetails"><a href="#" class="textFour">VIEW STOCK DETAILS</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Recent News START -->
+    <section class="recent-news">
+        <h1 class="recentNews-title">RECENT NEWS</h1>
+        <div class="recentNews-row">
+            <div class="recentNews-col1">
+                <a href="#">
+                    <div class="recentNews-subCol">
+                        <div class="recentNews-img">
+                            <img src="img/recentNews-img1.jpg" alt="Recent News">
+                        </div>
+                        <div class="recentNews-texts">
+                            <p class="recentNews-date">JULY 8, 2022</p>
+                            <p class="recentNews-text">
+                                How Marvel Studios' <br>'Thor: Love and Thunder' <br>Adopts a New Technology
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="recentNews-subCol">
+                        <div class="recentNews-img">
+                            <img src="img/recentNews-img2.jpg" alt="Recent News">
+                        </div>
+                        <div class="recentNews-texts">
+                            <p class="recentNews-date">JULY 7, 2022</p>
+                            <p class="recentNews-text">
+                                Disney+ Releases an Illuminating Trailer for <br>'Light & Magic'
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="recentNews-col2">
+                <a href="#">
+                    <div class="recentNews-subCol2">
+                        <div class="recentNews-img">
+                            <img src="img/recentNews-img3.jpg" alt="Recent News">
+                        </div>
+                        <div class="recentNews-texts whiteBg">
+                            <p class="recentNews-date">JULY 11, 2022</p>
+                            <h1 class="recentNews-text">'Thor: Love and Thunder' Electrifies the Box Office with a Mighty $303.2..</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="recentNews-col3">
+                <a href="#">
+                    <div class="recentNews-subCol">
+                        <div class="recentNews-img">
+                            <img src="img/recentNews-img4.jpg" alt="Recent News">
+                        </div>
+                        <div class="recentNews-texts">
+                            <p class="recentNews-date">JULY 6, 2022</p>
+                            <p class="recentNews-text">20th Century Studios Debuts Trailer for David O.Russell's 'Amsterdam'</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="recentNews-subCol">
+                        <div class="recentNews-img">
+                            <img src="img/recentNews-img5.jpg" alt="Recent News">
+                        </div>
+                        <div class="recentNews-texts">
+                            <p class="recentNews-date">JULY 2, 2022</p>
+                            <p class="recentNews-text">Disney Announces the Disney Storytellers Fund at Howard University to Support...</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Middle Content START -->
+    <section class="middle-content">
+        <div class="middleContent-main">
+            <div class="middleContent-row1">
+                <div class="imgDiv">
+                    <img src="img/midContent-img1.jpg" alt="">
+                </div>
+                    <div class="midContent-textBox1">
+                        <h1>ABOUT</h1>
+                        <p>The mission of The Walt Disney Company is to entertain, inform and inspire people around the globe through the power of unparalleled storytelling, reflecting the iconic brands, creative minds and innovative technologies that make ours the world’s premier entertainment company.</p>
+                        <a href="#">VIEW MORE</a>
+                    </div>  
+            </div>
+            <div class="middleContent-row2">
+                <div class="imgDiv">
+                    <img src="img/midContent-img2.jpg" alt="">
+                </div>
+                <div class="midContent-textBox">
+                    <h1>INVESTOR RELATIONS</h1>
+                    <p>Our commitment to creativity, technology and innovation generates unparalleled experiences that drive long-term value for our shareholders.</p>
+                    <a href="#">VIEW MORE</a>
+                </div>
+            </div>
+            <div class="middleContent-row3">
+                <div class="imgDiv">
+                    <img src="img/midContent-img3.jpg" alt="">
+                </div>
+                <div class="midContent-textBox">
+                    <h1>CAREERS</h1>
+                    <p>Explore a variety of opportunities to start a new chapter in your career at Disney.</p>
+                    <a href="#">VIEW MORE<i class="fa-solid fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="middleContent-row4">
+                <div class="imgDiv">
+                    <img src="img/midContent-img4.jpg" alt="">
+                </div>
+                <div class="midContent-textBox">
+                    <h1>SOCIAL RESPONSIBILITY</h1>
+                    <p>Our approach to corporate social responsibility is built upon the Company's long and enduring legacy of engagement in our workplaces and communities and our actions to protect the environment.</p>
+                    <a href="#">VIEW MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer START -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-row1">
+                <p>FOLLOW US ON</p>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="footer-row2">
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">You California Privacy Rights</a></li>
+                    <li><a href="#">Children's Online Privacy Policy</a></li>
+                    <li><a href="#">Disney.com Guest Services</a></li>
+                    <li><a href="#">Advertise With Us</a></li>
+                    <li><a href="#">Interest-Based Ads</a></li>
+                    <li><a href="#">Do Not Sell My Personal Information</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-row3">
+                <p>&copy; Disney. All rights reserved</p>
+            </div>
+        </div>
+        <div class="rainbow-design"></div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
